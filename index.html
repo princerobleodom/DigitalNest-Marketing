@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Nest Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/style2.css">
+
+  <style>
+    
+  </style>
+
+</head>
+
+<body>
+
+  <div class="line">
+    <div class="sqaure"> </div>
+    <div class="logo">
+      <img src="/images/logo-removebg-preview.png" alt="logo">
+    </div>
+    <div class="l">
+      <img src="/images/img-removebg-preview.png" alt="">
+    </div>
+    <div class="n">
+      <header>
+        <nav>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="proposal.html">Business Proposal</a>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <header>
+        <!-- Typing effect for the full text -->
+        <div class="typing-effect" id="typingText"></div>
+      </header>
+      <main>
+        <section class="hero">
+          <h1>
+            <div id="lol">GROW YOUR </div><b>BUSINESS</b> <br>
+            <div id="lol">WITH US</div>
+          </h1>
+          <i>
+            <p><a href="/services.html">Our Services</a></p>
+          </i>
+          <ul class="work">
+            <li>Strategy and Planning</li>
+            <br>
+            <li>Corporate Finance</li>
+            <br>
+            <li>Market Research</li>
+          </ul>
+          <button> <a href="contact.html">Join Us</a></button>
+        </section>
+      </main>
+      <div class="rig">
+        <img src="/images/WhatsApp_Image_2024-12-05_at_03.07.44_b85f1525-removebg-preview.png" alt="">
+      </div>
+      <div class="dow">
+        <img src="/images/WhatsApp_Image_2024-12-05_at_03.07.44_05f48867-removebg-preview.png" alt="">
+      </div>
+      <br><br>
+      <footer>
+        <img src="/images/images__1_-removebg-preview.png" alt="">
+        <a class="web" href="https://wa.me/2347010238585" target="_blank">Chat with us on WhatsApp</a> <br>
+        <img src="/images/download-removebg-preview.png" alt="">
+        <a class="web" href="https://www.instagram.com/digitalnest_marketing?igsh=MWM4NWN3bHByZDAxbg==">digitalnest_marketing</a>
+        <p id="footerText">&copy; 2024 DigitalNest Marketing - All Rights Reserved</p>
+
+        <script>
+          const colors = ['white', 'red', 'blue', 'orange'];
+          const footer = document.getElementById('footerText');
+          const parts = footer.innerHTML.split(' ');
+
+          footer.innerHTML = parts
+            .map((part, index) => `<span style="color: ${colors[index % colors.length]};">${part}</span>`)
+            .join(' ');
+        </script>
+
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to create the typing effect
+    const text = "Digital Nest Marketing";
+    const typingTextElement = document.getElementById("typingText");
+    let index = 0;
+
+    function typeEffect() {
+      if (index < text.length) {
+        typingTextElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100); // Adjust typing speed here (100ms)
+      }
+    }
+
+    // Trigger the typing effect when the page loads
+    window.onload = typeEffect;
+  </script>
+
+</body>
+
+</html>

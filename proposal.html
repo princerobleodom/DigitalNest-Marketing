@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Proposal - DigitalNest Marketing</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business Proposal for DigitalNest Marketing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+        </nav>
+    </header>
+
+    <!-- Image slider -->
+    <div class="image-slider">
+        <img src="images/1.jpg" class="active" alt="Image 1">
+        <img src="images/2.jpg" alt="Image 2">
+        <img src="images/3.jpg" alt="Image 3">
+        <img src="images/4.jpg" alt="Image 4">
+        <img src="images/5.jpg" alt="Image 5">
+        <img src="images/6.jpg" alt="Image 6">
+        <img src="images/7.jpg" alt="Image 7">
+        <img src="images/8.jpg" alt="Image 8">
+
+        <!-- Navigation buttons -->
+        <button class="arrow-btn prev-btn">&#10092;</button>
+        <button class="arrow-btn next-btn">&#10093;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DigitalNest Marketing. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for image slider
+        const images = document.querySelectorAll('.image-slider img');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        function showPreviousImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        // Automatically change images every 5 seconds
+        setInterval(showNextImage, 5000);
+
+        // Add click functionality to manually switch to the next or previous image
+        nextButton.addEventListener('click', showNextImage);
+        prevButton.addEventListener('click', showPreviousImage);
+    </script>
+</body>
+</html>

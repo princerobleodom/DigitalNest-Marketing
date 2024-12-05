@@ -1,0 +1,191 @@
+body{
+    background-color: #0f283a;
+}
+
+.container {
+    color: white;
+    margin-left: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sqaure {
+    width: 250px;
+    height: 250px;
+    background-color: #ff9800;
+    margin-left: 43%;
+    margin-top: -170px;
+    border-radius: 50px;
+    rotate: 45deg;
+    
+
+}
+i p a{
+    color: #ff9800;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.work {
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 13px;
+    margin-top: -10px;
+    letter-spacing: 1px;
+}
+.line {
+    width: 50%;
+    height: 100%;
+    padding-bottom: 120px;
+    margin-left: 27%;
+    background-color: #0f283a;
+}
+header {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    
+
+}
+.logo {
+    margin-left: 40px;
+    margin-top: -70px;
+}
+.logo img{
+    width: 105px;
+    height: 80px;
+}
+
+.l {
+    position: absolute;
+    margin-left: -250px;
+    margin-top: 150px;
+}
+.l img{
+    width: 300px;
+    height: 300px;
+}
+
+.hero #lol {
+    text-decoration: none;
+    font-weight: normal;
+
+}
+.hero b {
+    color: red;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+
+button {
+    background-color: #ff9800;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: #ff9800;
+}
+a {
+    color: #0f283a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+   
+   
+}
+img{
+    width: 15px;
+    height: 15px;
+}
+p{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.web{
+    color: whitesmoke;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+    color: rgb(235, 202, 16);
+    font-size: 15px;
+   padding-left: 40px;
+}
+.n{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 20px
+}
+.rig{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -280px;
+}
+.rig img{
+    width: 300px;
+    height: 450px;
+}
+.dow{
+    position: absolute;
+    margin-left: 71px;
+    margin-top: 105px;
+}
+.dow img{
+    width: 350px;
+    height: 100px;
+}
+footer p{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+    color:  linear-gradient(to right, #000000, #373a3d);;
+}
+    /* Styling for the typing effect */
+.typing-effect {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: blink-caret 0.7s step-end infinite;
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+  }
+  @keyframes blink-caret {
+
+    from,
+    to {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: #ff9800;
+    }
+  }
+  /* Add a slide-in animation to the images */
+  .l img,
+  .rig img,
+  .dow img {
+    opacity: 0; /* Initially hide images */
+    transform: translateX(100%); /* Slide in from the right */
+    animation: slideIn 1s forwards; /* Apply the slide-in animation */
+  }
+
+  .l img {
+    animation-delay: 0.5s; /* Delay for the left image */
+  }
+
+  .rig img {
+    animation-delay: 1s; /* Delay for the first right image */
+  }
+
+  .dow img {
+    animation-delay: 1.5s; /* Delay for the second right image */
+  }
+
+  /* Keyframes for sliding effect */
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Move to the original position */
+    }
+  }
