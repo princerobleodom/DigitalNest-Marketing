@@ -189,3 +189,71 @@ footer p{
       transform: translateX(0); /* Move to the original position */
     }
   }
+  
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    header p {
+        font-size: 1em;
+    }
+
+    header nav a {
+        padding: 8px 10px;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section ul li {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 5px 0;
+        padding: 10px;
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+    }
+
+    section {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.4em;
+    }
+    
+    section ul li {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
