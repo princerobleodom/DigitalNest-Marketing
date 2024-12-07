@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - DigitalNest Marketing</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
         <h1>Contact Us</h1>
@@ -19,16 +21,21 @@
 
     <section id="contact-form">
         <h2>Get in Touch</h2>
-        <form action="mailto:princerobleodom1@gmail.com?subject=New%20Message%20from%20Contact%20Form" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required> <br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required> <br><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea> <br><br>
-
+        <!-- modify this form HTML and place wherever you want your form -->
+        <form action="https://formspree.io/f/xrbgdzvr" method="POST">
+            <label for="name">
+                Name:
+                 <input type="text" id="name" name="name" required> 
+            </label> <br><br>
+            <label>
+                Your email:
+                <input type="email" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
             <button type="submit">Submit</button>
         </form>
     </section>
@@ -37,4 +44,5 @@
         <p>&copy; 2024 DigitalNest Marketing - All Rights Reserved</p>
     </footer>
 </body>
+
 </html>
